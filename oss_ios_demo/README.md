@@ -31,6 +31,7 @@ OSS下载demo
 AliyunOSSSimpleDownloadDemo，简单下载
 AliyunOSSScopeDownloadDemo，指定范围下载
 AliyunOSSHeaderDownloadDemo，只获取文件元数据
+AliyunOSSDownloadWithBlockDemo，带回调block下载
 ```
 
 

@@ -43,6 +43,9 @@
     
     /** 只获取文件元数据 */
     //[self runOSSSHeaderDownloadDemo];
+    
+    /** 带回调block下载 */
+    //[self runOSSDownloadWithBlockDemo];
 }
 
 // init
@@ -89,6 +92,11 @@
 }
 - (void) runOSSSHeaderDownloadDemo {
     AliyunOSSHeaderDownloadDemo * demo = [[AliyunOSSHeaderDownloadDemo alloc] init];
+    [demo runDemo];
+}
+
+- (void)runOSSDownloadWithBlockDemo {
+    AliyunOSSDownloadWithBlockDemo * demo = [[AliyunOSSDownloadWithBlockDemo alloc] init];
     [demo runDemo];
 }
 

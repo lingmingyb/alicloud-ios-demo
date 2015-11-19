@@ -28,6 +28,7 @@
 #import "AliyunOSSSimpleDownloadDemo.h"
 #import "AliyunOSSScopeDownloadDemo.h"
 #import "AliyunOSSHeaderDownloadDemo.h"
+#import "AliyunOSSDownloadWithBlockDemo.h"
 
 @interface AliyunOSSDemoTest : NSObject
 
@@ -49,6 +50,7 @@
 - (void) runOSSSimpleDownloadDemo;
 - (void) runOSSScopeDownloadDemo;
 - (void) runOSSSHeaderDownloadDemo;
+- (void) runOSSDownloadWithBlockDemo;
 
 @end
 

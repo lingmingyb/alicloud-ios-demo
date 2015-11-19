@@ -12,7 +12,7 @@
 // constant value
 NSString * const AccessKey = @"<enter your access key>";
 NSString * const SecretKey = @"<enter your secret key>";
-NSString * const endPoint = @"<enter your endPoint>";
+NSString * const endPoint = @"<enter your endpoint>";
 
 
 @implementation AliyunOSSCommonSupport
