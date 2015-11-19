@@ -26,8 +26,8 @@ extern NSString * const endPoint;
     __block NSString * uploadId = nil;
     __block NSMutableArray * partInfos = [NSMutableArray new];
     
-    NSString * uploadToBucket = @"junmo";
-    NSString * uploadObjectkey = @"file_multipart_upload";
+    NSString * uploadToBucket = @"<enter your bucket name>";
+    NSString * uploadObjectkey = @"<enter object key>";
     
     OSSInitMultipartUploadRequest * init = [OSSInitMultipartUploadRequest new];
     init.bucketName = uploadToBucket;

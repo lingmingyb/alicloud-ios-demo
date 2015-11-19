@@ -23,8 +23,8 @@ extern NSString * const endPoint;
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential];
     
     OSSHeadObjectRequest * request = [OSSHeadObjectRequest new];
-    request.bucketName = @"junmo";
-    request.objectKey = @"file_simple_upload";
+    request.bucketName = @"<enter your bucket name>";
+    request.objectKey = @"<enter object key>";
     
     OSSTask * headTask = [client headObject:request];
     

@@ -23,12 +23,11 @@ extern NSString * const endPoint;
     id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc] initWithPlainTextAccessKey:AccessKey secretKey:SecretKey];
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential];
     
-    // simple asynchronous upload
     
     OSSPutObjectRequest * put = [OSSPutObjectRequest new];
     OSSPutObjectRequest * request = [OSSPutObjectRequest new];
-    request.bucketName = @"junmo";
-    request.objectKey = @"file_md5_upload";
+    request.bucketName = @"<enter your bucket name>";
+    request.objectKey = @"<enter object key>";
     
     
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_md5_upload" fileSize:1024];

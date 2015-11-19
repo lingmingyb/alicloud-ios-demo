@@ -10,9 +10,9 @@
 #import "AliyunOSSCommonSupport.h"
 
 // constant value
-NSString * const AccessKey = @"vOaqd3NkbBli0Ep0";
-NSString * const SecretKey = @"466r0qcSUMDnFbIryEhfRxjXYYtSB4";
-NSString * const endPoint = @"http://oss-cn-hangzhou.aliyuncs.com";
+NSString * const AccessKey = @"<enter your access key>";
+NSString * const SecretKey = @"<enter your secret key>";
+NSString * const endPoint = @"<enter your endPoint>";
 
 
 @implementation AliyunOSSCommonSupport
@@ -60,6 +60,7 @@ NSString * const endPoint = @"http://oss-cn-hangzhou.aliyuncs.com";
     NSLog(@"main bundle: %@", mainDir);
 }
 
+// create a file with size of fileSize in the fixed path, and return the file path.
 + (NSString *)createTempFile : (NSString * ) fileName fileSize : (int) size {
     NSString * tempFileDirectory;
     NSString * path = NSHomeDirectory();
@@ -84,7 +85,7 @@ NSString * const endPoint = @"http://oss-cn-hangzhou.aliyuncs.com";
 }
 
 
-// delelte all temp file
+// delelte all temp files
 + (void)clearAllTempFile {
     NSString * tempFileDirectory;
     tempFileDirectory = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"tmp"];

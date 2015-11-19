@@ -25,8 +25,8 @@ extern NSString * const endPoint;
     
     OSSGetObjectRequest * request = [OSSGetObjectRequest new];
     // required
-    request.bucketName = @"junmo";
-    request.objectKey = @"file_simple_upload";
+    request.bucketName = @"<enter your bucket name>";
+    request.objectKey = @"<enter object key>";
     
     //optional
     request.downloadProgress = ^(int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
@@ -35,7 +35,6 @@ extern NSString * const endPoint;
     };
     
     OSSTask * getTask = [client getObject:request];
-    
     [getTask continueWithBlock:^id(OSSTask *task) {
         if (!task.error) {
             NSLog(@"download object success!");

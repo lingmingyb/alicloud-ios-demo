@@ -15,10 +15,8 @@
 
 + (void) initLocalFile;
 
-// create a file with size of fileSize in the fixed path, and return the file path.
-+ (NSString *)createTempFile : (NSString * ) fileName fileSize : (int) size;
 
-// clear all the temp files.
++ (NSString *)createTempFile : (NSString * ) fileName fileSize : (int) size;
 + (void)clearAllTempFile;
 
 @end

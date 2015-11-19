@@ -20,6 +20,7 @@
 		4A20C2D51BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2D41BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m */; };
 		4A20C2D71BFD6726008C4325 /* AliyunOSSCustomInitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2D61BFD6726008C4325 /* AliyunOSSCustomInitDemo.m */; };
 		4A20C2DB1BFD7D57008C4325 /* AliyunOSSDemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2DA1BFD7D57008C4325 /* AliyunOSSDemoTest.m */; };
+		4A9437F51BFDBD8A00D9B2A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4A9437F41BFDBD8A00D9B2A4 /* README.md */; };
 		4AB444841BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444831BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m */; };
 		4AB444B01BFC620600568D6A /* AliyunOSSCommonSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444AF1BFC620600568D6A /* AliyunOSSCommonSupport.m */; };
 		4AB444B61BFC690200568D6A /* AliyunOSSAppendUploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444B51BFC690200568D6A /* AliyunOSSAppendUploadDemo.m */; };
@@ -65,6 +66,7 @@
 		4A20C2D81BFD672E008C4325 /* AliyunOSSCustomInitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSCustomInitDemo.h; sourceTree = "<group>"; };
 		4A20C2D91BFD7D48008C4325 /* AliyunOSSDemoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSDemoTest.h; sourceTree = "<group>"; };
 		4A20C2DA1BFD7D57008C4325 /* AliyunOSSDemoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSDemoTest.m; sourceTree = "<group>"; };
+		4A9437F41BFDBD8A00D9B2A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4AB444821BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliyunOSSSimpleUploadDemo.h; sourceTree = "<group>"; };
 		4AB444831BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSSimpleUploadDemo.m; sourceTree = "<group>"; };
 		4AB444AE1BFC61F200568D6A /* AliyunOSSCommonSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSCommonSupport.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				21F02EBB1BA6AC8800D13D12 /* oss_ios_demo */,
 				21F02ED51BA6AC8800D13D12 /* oss_ios_demoTests */,
 				21F02EBA1BA6AC8800D13D12 /* Products */,
+				4A9437F41BFDBD8A00D9B2A4 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +334,7 @@
 				4AB444BE1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m in Sources */,
 				21F02EC21BA6AC8800D13D12 /* AppDelegate.m in Sources */,
 				4A20C2DB1BFD7D57008C4325 /* AliyunOSSDemoTest.m in Sources */,
+				4A9437F51BFDBD8A00D9B2A4 /* README.md in Sources */,
 				21F02EBF1BA6AC8800D13D12 /* main.m in Sources */,
 				4AB444B61BFC690200568D6A /* AliyunOSSAppendUploadDemo.m in Sources */,
 				4A20C2D51BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m in Sources */,

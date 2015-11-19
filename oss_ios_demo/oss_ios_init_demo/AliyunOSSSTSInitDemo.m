@@ -50,10 +50,10 @@ extern NSString * endPoint;
                                                                       error:nil];
             OSSFederationToken * token = [OSSFederationToken new];
             // 四个值缺一不可
-            token.tAccessKey = [object objectForKey:@"accessKeyId"];
-            token.tSecretKey = [object objectForKey:@"accessKeySecret"];
-            token.tToken = [object objectForKey:@"securityToken"];
-            token.expirationTimeInGMTFormat = [object objectForKey:@"expiration"];
+            token.tAccessKey = [object objectForKey:@"<enter accessKeyId>"];
+            token.tSecretKey = [object objectForKey:@"<enter accessKeySecret>"];
+            token.tToken = [object objectForKey:@"<enter securityToken>"];
+            token.expirationTimeInGMTFormat = [object objectForKey:@"<enter expiration>"];
             return token;
         }
     }];
@@ -66,6 +66,7 @@ extern NSString * endPoint;
     
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential clientConfiguration:conf];
     
+    // client init success or not
     if (client) {
         NSLog(@"client init success!");
     } else {
@@ -79,8 +80,8 @@ extern NSString * endPoint;
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_sts_init" fileSize:1024];
     
     // required fields
-    put.bucketName = @"junmo";
-    put.objectKey = @"file_sts_init";
+    put.bucketName = @"<enter your bucket name>";
+    put.objectKey = @"<enter object key>";
     
     put.uploadingFileURL = [NSURL fileURLWithPath:tempFilePath];
     

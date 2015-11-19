@@ -14,17 +14,34 @@
 
 - (void)selectDemoToRun {
     
+    /** 明文设置初始化client并简单上传 */
     [self runOSSPlaintextInitDemo];
+    
+    /** 自签名初始化client并简单上传 */
     //[self runOSSCustomInitDemo];
+    
+    /** Federation鉴权初始化client并简单上传 */
     //[self runOSSSTSInitDemo];
     
+    /** 简单上传 */
     //[self runOSSSimpleUploadDemo];
+    
+    /** 追加上传 */
     //[self runOSSAppendUploadDemo];
+    
+    /** 断点续传 */
     //[self runOSSMultipartUploadDemo];
+    
+    /** MD5校验上传 */
     //[self runOSSMD5UploadDemo];
     
+    /** 简单下载 */
     //[self runOSSSimpleDownloadDemo];
+    
+    /** 指定范围下载 */
     //[self runOSSScopeDownloadDemo];
+    
+    /** 只获取文件元数据 */
     //[self runOSSSHeaderDownloadDemo];
 }
 

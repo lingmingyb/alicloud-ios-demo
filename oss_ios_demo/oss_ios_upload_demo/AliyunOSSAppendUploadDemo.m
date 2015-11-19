@@ -27,8 +27,8 @@ extern NSString * const endPoint;
     OSSAppendObjectRequest * append = [OSSAppendObjectRequest new];
     
     // 必填字段
-    append.bucketName = @"junmo";
-    append.objectKey = @"file_append_upload";
+    append.bucketName = @"<enter your bucket name>";
+    append.objectKey = @"<enter object key>";
     append.appendPosition = 0; // 指定从何处进行追加
     // create temp file
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_append_upload" fileSize:1024];

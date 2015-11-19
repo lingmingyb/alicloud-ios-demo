@@ -35,6 +35,7 @@ extern NSString * const endPoint;
     }];
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential];
     
+    // client init success or not
     if (client) {
         NSLog(@"client init success!");
     } else {
@@ -48,8 +49,8 @@ extern NSString * const endPoint;
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_customsigner_init" fileSize:1024];
     
     // required fields
-    put.bucketName = @"junmo";
-    put.objectKey = @"file_customsigner_init";
+    put.bucketName = @"<enter your bucket name>";
+    put.objectKey = @"<enter object key>";
     
     put.uploadingFileURL = [NSURL fileURLWithPath:tempFilePath];
     

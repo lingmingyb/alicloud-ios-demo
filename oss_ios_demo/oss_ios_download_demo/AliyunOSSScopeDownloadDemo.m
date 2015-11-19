@@ -24,18 +24,17 @@ extern NSString * const endPoint;
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential];
     
     OSSGetObjectRequest * request = [OSSGetObjectRequest new];
-    request.bucketName = @"junmo";
-    request.objectKey = @"file_simple_upload";
+    request.bucketName = @"<enter your bucket name>";
+    request.objectKey = @"<enter object key>";
+    
+    // specify the scope
     request.range = [[OSSRange alloc] initWithStart:1 withEnd:99]; // bytes=1-99
-    // request.range = [[OSSRange alloc] initWithStart:-1 withEnd:99]; // bytes=-99
-    // request.range = [[OSSRange alloc] initWithStart:10 withEnd:-1]; // bytes=10-
     
     request.downloadProgress = ^(int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
         NSLog(@"%lld, %lld, %lld", bytesWritten, totalBytesWritten, totalBytesExpectedToWrite);
     };
     
     OSSTask * getTask = [client getObject:request];
-    
     [getTask continueWithBlock:^id(OSSTask *task) {
         if (!task.error) {
             NSLog(@"download object success!");

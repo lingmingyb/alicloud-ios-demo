@@ -30,8 +30,8 @@ extern NSString * const endPoint;
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_simple_upload" fileSize:1024];
     
     // required fields
-    put.bucketName = @"junmo";
-    put.objectKey = @"file_simple_upload";
+    put.bucketName = @"<enter your bucket name>";
+    put.objectKey = @"<enter object key>";
     
     put.uploadingFileURL = [NSURL fileURLWithPath:tempFilePath];
     

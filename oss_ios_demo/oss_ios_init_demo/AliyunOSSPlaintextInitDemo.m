@@ -23,6 +23,7 @@ extern NSString * const endPoint;
     id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc] initWithPlainTextAccessKey:AccessKey secretKey:SecretKey];
     client = [[OSSClient alloc] initWithEndpoint:endPoint credentialProvider:credential];
     
+    // client init success or not
     if (client) {
         NSLog(@"client init success!");
     } else {
@@ -36,8 +37,8 @@ extern NSString * const endPoint;
     NSString * tempFilePath = [AliyunOSSCommonSupport createTempFile:@"temp_plaintext_init" fileSize:1024];
     
     // required fields
-    put.bucketName = @"junmo";
-    put.objectKey = @"file_plaintext_init";
+    put.bucketName = @"<enter your bucket name>";
+    put.objectKey = @"<enter object key>";
     put.uploadingFileURL = [NSURL fileURLWithPath:tempFilePath];
     
     // optional fields
