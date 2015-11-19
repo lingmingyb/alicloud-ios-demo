@@ -10,10 +10,29 @@
 #import <AliyunOSSiOS/OSSService.h>
 #import <AliyunOSSiOS/OSSCompat.h>
 
-NSString * const AccessKey = @"************";
-NSString * const SecretKey = @"**********************";
-NSString * const endPoint = @"http://oss-cn-hangzhou.aliyuncs.com";
-NSString * const multipartUploadKey = @"multipartUploadObject";
+#import "AliyunOSSCommonSupport.h"
+
+// init
+#import "../oss_ios_init_demo/AliyunOSSPlaintextInitDemo.h"
+#import "../oss_ios_init_demo/AliyunOSSCustomInitDemo.h"
+
+// upload
+#import "../oss_ios_upload_demo/AliyunOSSSimpleUploadDemo.h"
+#import "../oss_ios_upload_demo/AliyunOSSAppendUploadDemo.h"
+#import "../oss_ios_upload_demo/AliyunOSSMultipartUploadDemo.h"
+#import "../oss_ios_upload_demo/AliyunOSSMD5UploadDemo.h"
+
+// download
+#import "../oss_ios_download_demo/AliyunOSSSimpleDownloadDemo.h"
+#import "../oss_ios_download_demo/AliyunOSSScopeDownloadDemo.h"
+#import "../oss_ios_download_demo/AliyunOSSHeaderDownloadDemo.h"
+
+
+
+extern NSString * const AccessKey;
+extern NSString * const SecretKey;
+extern NSString * const endPoint;
+extern NSString * const multipartUploadKey;
 
 
 OSSClient * client;
@@ -25,9 +44,27 @@ static dispatch_queue_t queue4demo;
 
     [OSSLog enableLog];
 
-    [self initLocalFile];
+    // init demo
+    //AliyunOSSPlaintextInitDemo * demo = [[AliyunOSSPlaintextInitDemo alloc] init];
+    //AliyunOSSCustomInitDemo * demo = [[AliyunOSSCustomInitDemo alloc] init];
+    
+    // upload demo
+    //AliyunOSSMD5UploadDemo * demo = [[AliyunOSSMD5UploadDemo alloc] init];
+    //AliyunOSSMultipartUploadDemo * demo = [[AliyunOSSMultipartUploadDemo alloc] init];
+    
+    // download demo
+    //AliyunOSSHeaderDownloadDemo * demo = [[AliyunOSSHeaderDownloadDemo alloc] init];
+    
+    
+    
+    //[demo runDemo];
+    
+    
+    
+    
+    //[self initLocalFile];
 
-    [self initOSSClient];
+    // [self initOSSClient];
 
 
     /*************** 以下每个方法调用代表一个功能的演示，取消注释即可运行 ***************/
@@ -48,7 +85,7 @@ static dispatch_queue_t queue4demo;
     // [self downloadObjectSync];
 
     // 复制文件
-    [self copyObjectAsync];
+    // [self copyObjectAsync];
 
     // 签名Obejct的URL以授权第三方访问
     // [self signAccessObjectURL];
@@ -75,48 +112,9 @@ static dispatch_queue_t queue4demo;
     // [self oldResumableUploadStyle];
 }
 
-// get local file dir which is readwrite able
-- (NSString *)getDocumentDirectory {
-    NSString * path = NSHomeDirectory();
-    NSLog(@"NSHomeDirectory:%@",path);
-    NSString * userName = NSUserName();
-    NSString * rootPath = NSHomeDirectoryForUser(userName);
-    NSLog(@"NSHomeDirectoryForUser:%@",rootPath);
-    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString * documentsDirectory = [paths objectAtIndex:0];
-    return documentsDirectory;
-}
 
-// create some random file for demo cases
-- (void)initLocalFile {
-    NSFileManager * fm = [NSFileManager defaultManager];
-    NSString * mainDir = [self getDocumentDirectory];
 
-    NSArray * fileNameArray = @[@"file1k", @"file10k", @"file100k", @"file1m", @"file10m", @"fileDirA/", @"fileDirB/"];
-    NSArray * fileSizeArray = @[@1024, @10240, @102400, @1024000, @10240000, @1024, @1024];
 
-    NSMutableData * basePart = [NSMutableData dataWithCapacity:1024];
-    for (int i = 0; i < 1024/4; i++) {
-        u_int32_t randomBit = arc4random();
-        [basePart appendBytes:(void*)&randomBit length:4];
-    }
-
-    for (int i = 0; i < [fileNameArray count]; i++) {
-        NSString * name = [fileNameArray objectAtIndex:i];
-        long size = [[fileSizeArray objectAtIndex:i] longValue];
-        NSString * newFilePath = [mainDir stringByAppendingPathComponent:name];
-        if ([fm fileExistsAtPath:newFilePath]) {
-            [fm removeItemAtPath:newFilePath error:nil];
-        }
-        [fm createFileAtPath:newFilePath contents:nil attributes:nil];
-        NSFileHandle * f = [NSFileHandle fileHandleForWritingAtPath:newFilePath];
-        for (int k = 0; k < size/1024; k++) {
-            [f writeData:basePart];
-        }
-        [f closeFile];
-    }
-    NSLog(@"main bundle: %@", mainDir);
-}
 
 - (void)initOSSClient {
 
@@ -251,7 +249,7 @@ static dispatch_queue_t queue4demo;
     // required fields
     put.bucketName = @"android-test";
     put.objectKey = @"file1m";
-    NSString * docDir = [self getDocumentDirectory];
+    NSString * docDir = [AliyunOSSCommonSupport getDocumentDirectory];
     put.uploadingFileURL = [NSURL fileURLWithPath:[docDir stringByAppendingPathComponent:@"file1m"]];
 
     // optional fields
@@ -283,7 +281,7 @@ static dispatch_queue_t queue4demo;
     // required fields
     put.bucketName = @"android-test";
     put.objectKey = @"file1m";
-    NSString * docDir = [self getDocumentDirectory];
+    NSString * docDir = [AliyunOSSCommonSupport getDocumentDirectory];
     put.uploadingFileURL = [NSURL fileURLWithPath:[docDir stringByAppendingPathComponent:@"file1m"]];
 
     // optional fields
@@ -315,7 +313,7 @@ static dispatch_queue_t queue4demo;
     append.bucketName = @"android-test";
     append.objectKey = @"file1m";
     append.appendPosition = 0; // 指定从何处进行追加
-    NSString * docDir = [self getDocumentDirectory];
+    NSString * docDir = [AliyunOSSCommonSupport getDocumentDirectory];
     append.uploadingFileURL = [NSURL fileURLWithPath:[docDir stringByAppendingPathComponent:@"file1m"]];
 
     // 可选字段
@@ -516,7 +514,7 @@ static dispatch_queue_t queue4demo;
         uploadPart.uploadId = uploadId;
         uploadPart.partNumber = i; // part number start from 1
 
-        NSString * docDir = [self getDocumentDirectory];
+        NSString * docDir = [AliyunOSSCommonSupport getDocumentDirectory];
         uploadPart.uploadPartFileURL = [NSURL URLWithString:[docDir stringByAppendingPathComponent:@"file1m"]];
 
         OSSTask * uploadPartTask = [client uploadPart:uploadPart];
@@ -578,7 +576,7 @@ static dispatch_queue_t queue4demo;
 - (void)resumableUpload {
     __block NSString * recordKey;
 
-    NSString * docDir = [self getDocumentDirectory];
+    NSString * docDir = [AliyunOSSCommonSupport getDocumentDirectory];
     NSString * filePath = [docDir stringByAppendingPathComponent:@"file1m"];
     NSString * bucketName = @"android-test";
     NSString * objectKey = @"uploadKey";
@@ -677,7 +675,7 @@ static dispatch_queue_t queue4demo;
 
 - (void)oldPutObjectStyle {
 
-    NSString * doctDir = [self getDocumentDirectory];
+    NSString * doctDir = [AliyunOSSCommonSupport getDocumentDirectory];
     NSString * filePath = [doctDir stringByAppendingPathComponent:@"file10m"];
 
     NSDictionary * objectMeta = @{@"x-oss-meta-name1": @"value1"};
@@ -701,7 +699,7 @@ static dispatch_queue_t queue4demo;
 
 - (void)oldResumableUploadStyle {
 
-    NSString * doctDir = [self getDocumentDirectory];
+    NSString * doctDir = [AliyunOSSCommonSupport getDocumentDirectory];
     NSString * filePath = [doctDir stringByAppendingPathComponent:@"file10m"];
 
     OSSTaskHandler * tk = [client resumableUploadFile:filePath

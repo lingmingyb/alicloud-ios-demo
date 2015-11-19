@@ -7,20 +7,20 @@
 //
 
 #import "AppDelegate.h"
-#import "AliyunOSSDemo.h"
+#import "AliyunOSSDemoTest.h"
 
 @interface AppDelegate ()
 @end
 
-AliyunOSSDemo * demo;
+AliyunOSSDemoTest * demo;
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    demo = [AliyunOSSDemo new];
-    [demo runDemo];
+    demo = [AliyunOSSDemoTest new];
+    [demo selectDemoToRun];
     return YES;
 }
 

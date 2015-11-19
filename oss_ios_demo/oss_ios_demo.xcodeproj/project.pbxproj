@@ -16,6 +16,18 @@
 		21F02ECA1BA6AC8800D13D12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F02EC91BA6AC8800D13D12 /* Images.xcassets */; };
 		21F02ECD1BA6AC8800D13D12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F02ECB1BA6AC8800D13D12 /* LaunchScreen.xib */; };
 		21F02ED91BA6AC8800D13D12 /* oss_ios_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F02ED81BA6AC8800D13D12 /* oss_ios_demoTests.m */; };
+		4A20C2D11BFD59C2008C4325 /* AliyunOSSPlaintextInitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2D01BFD59C2008C4325 /* AliyunOSSPlaintextInitDemo.m */; };
+		4A20C2D51BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2D41BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m */; };
+		4A20C2D71BFD6726008C4325 /* AliyunOSSCustomInitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2D61BFD6726008C4325 /* AliyunOSSCustomInitDemo.m */; };
+		4A20C2DB1BFD7D57008C4325 /* AliyunOSSDemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C2DA1BFD7D57008C4325 /* AliyunOSSDemoTest.m */; };
+		4AB444841BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444831BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m */; };
+		4AB444B01BFC620600568D6A /* AliyunOSSCommonSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444AF1BFC620600568D6A /* AliyunOSSCommonSupport.m */; };
+		4AB444B61BFC690200568D6A /* AliyunOSSAppendUploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444B51BFC690200568D6A /* AliyunOSSAppendUploadDemo.m */; };
+		4AB444B81BFC698900568D6A /* AliyunOSSMultipartUploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444B71BFC698900568D6A /* AliyunOSSMultipartUploadDemo.m */; };
+		4AB444BC1BFC9F4500568D6A /* AliyunOSSSimpleDownloadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444BB1BFC9F4500568D6A /* AliyunOSSSimpleDownloadDemo.m */; };
+		4AB444BE1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444BD1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m */; };
+		4AB444C11BFC9FA000568D6A /* AliyunOSSHeaderDownloadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444C01BFC9FA000568D6A /* AliyunOSSHeaderDownloadDemo.m */; };
+		4AB444C51BFCA55500568D6A /* AliyunOSSMD5UploadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB444C41BFCA55500568D6A /* AliyunOSSMD5UploadDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,30 @@
 		21F02ED21BA6AC8800D13D12 /* oss_ios_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oss_ios_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F02ED71BA6AC8800D13D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21F02ED81BA6AC8800D13D12 /* oss_ios_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oss_ios_demoTests.m; sourceTree = "<group>"; };
+		4A20C2D01BFD59C2008C4325 /* AliyunOSSPlaintextInitDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSPlaintextInitDemo.m; sourceTree = "<group>"; };
+		4A20C2D21BFD59D2008C4325 /* AliyunOSSPlaintextInitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSPlaintextInitDemo.h; sourceTree = "<group>"; };
+		4A20C2D31BFD5F48008C4325 /* AliyunOSSSTSInitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSSTSInitDemo.h; sourceTree = "<group>"; };
+		4A20C2D41BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSSTSInitDemo.m; sourceTree = "<group>"; };
+		4A20C2D61BFD6726008C4325 /* AliyunOSSCustomInitDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSCustomInitDemo.m; sourceTree = "<group>"; };
+		4A20C2D81BFD672E008C4325 /* AliyunOSSCustomInitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSCustomInitDemo.h; sourceTree = "<group>"; };
+		4A20C2D91BFD7D48008C4325 /* AliyunOSSDemoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSDemoTest.h; sourceTree = "<group>"; };
+		4A20C2DA1BFD7D57008C4325 /* AliyunOSSDemoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSDemoTest.m; sourceTree = "<group>"; };
+		4AB444821BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliyunOSSSimpleUploadDemo.h; sourceTree = "<group>"; };
+		4AB444831BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSSimpleUploadDemo.m; sourceTree = "<group>"; };
+		4AB444AE1BFC61F200568D6A /* AliyunOSSCommonSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSCommonSupport.h; sourceTree = "<group>"; };
+		4AB444AF1BFC620600568D6A /* AliyunOSSCommonSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSCommonSupport.m; sourceTree = "<group>"; };
+		4AB444B41BFC68EE00568D6A /* AliyunOSSAppendUploadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSAppendUploadDemo.h; sourceTree = "<group>"; };
+		4AB444B51BFC690200568D6A /* AliyunOSSAppendUploadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSAppendUploadDemo.m; sourceTree = "<group>"; };
+		4AB444B71BFC698900568D6A /* AliyunOSSMultipartUploadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSMultipartUploadDemo.m; sourceTree = "<group>"; };
+		4AB444B91BFC699200568D6A /* AliyunOSSMultipartUploadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSMultipartUploadDemo.h; sourceTree = "<group>"; };
+		4AB444BA1BFC9F3A00568D6A /* AliyunOSSSimpleDownloadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSSimpleDownloadDemo.h; sourceTree = "<group>"; };
+		4AB444BB1BFC9F4500568D6A /* AliyunOSSSimpleDownloadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSSimpleDownloadDemo.m; sourceTree = "<group>"; };
+		4AB444BD1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSScopeDownloadDemo.m; sourceTree = "<group>"; };
+		4AB444BF1BFC9F7B00568D6A /* AliyunOSSScopeDownloadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSScopeDownloadDemo.h; sourceTree = "<group>"; };
+		4AB444C01BFC9FA000568D6A /* AliyunOSSHeaderDownloadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSHeaderDownloadDemo.m; sourceTree = "<group>"; };
+		4AB444C21BFC9FB300568D6A /* AliyunOSSHeaderDownloadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSHeaderDownloadDemo.h; sourceTree = "<group>"; };
+		4AB444C31BFCA54000568D6A /* AliyunOSSMD5UploadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliyunOSSMD5UploadDemo.h; sourceTree = "<group>"; };
+		4AB444C41BFCA55500568D6A /* AliyunOSSMD5UploadDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunOSSMD5UploadDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				212229D61BF470870067190E /* AliyunOSSiOS.framework */,
+				4AB444AD1BFC61D900568D6A /* oss_ios_common_support */,
+				4AB444AB1BFC616600568D6A /* oss_ios_init_demo */,
+				4AB444811BFC5F2C00568D6A /* oss_ios_upload_demo */,
+				4AB444AA1BFC615100568D6A /* oss_ios_download_demo */,
 				21F02EBB1BA6AC8800D13D12 /* oss_ios_demo */,
 				21F02ED51BA6AC8800D13D12 /* oss_ios_demoTests */,
 				21F02EBA1BA6AC8800D13D12 /* Products */,
@@ -88,6 +128,8 @@
 		21F02EBB1BA6AC8800D13D12 /* oss_ios_demo */ = {
 			isa = PBXGroup;
 			children = (
+				4A20C2D91BFD7D48008C4325 /* AliyunOSSDemoTest.h */,
+				4A20C2DA1BFD7D57008C4325 /* AliyunOSSDemoTest.m */,
 				210289361BA9240300C2A6BA /* AliyunOSSDemo.h */,
 				210289371BA9240300C2A6BA /* AliyunOSSDemo.m */,
 				21F02EC01BA6AC8800D13D12 /* AppDelegate.h */,
@@ -126,6 +168,56 @@
 				21F02ED71BA6AC8800D13D12 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AB444811BFC5F2C00568D6A /* oss_ios_upload_demo */ = {
+			isa = PBXGroup;
+			children = (
+				4AB444821BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.h */,
+				4AB444B41BFC68EE00568D6A /* AliyunOSSAppendUploadDemo.h */,
+				4AB444B91BFC699200568D6A /* AliyunOSSMultipartUploadDemo.h */,
+				4AB444C31BFCA54000568D6A /* AliyunOSSMD5UploadDemo.h */,
+				4AB444831BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m */,
+				4AB444B51BFC690200568D6A /* AliyunOSSAppendUploadDemo.m */,
+				4AB444B71BFC698900568D6A /* AliyunOSSMultipartUploadDemo.m */,
+				4AB444C41BFCA55500568D6A /* AliyunOSSMD5UploadDemo.m */,
+			);
+			path = oss_ios_upload_demo;
+			sourceTree = "<group>";
+		};
+		4AB444AA1BFC615100568D6A /* oss_ios_download_demo */ = {
+			isa = PBXGroup;
+			children = (
+				4AB444BA1BFC9F3A00568D6A /* AliyunOSSSimpleDownloadDemo.h */,
+				4AB444BF1BFC9F7B00568D6A /* AliyunOSSScopeDownloadDemo.h */,
+				4AB444C21BFC9FB300568D6A /* AliyunOSSHeaderDownloadDemo.h */,
+				4AB444BB1BFC9F4500568D6A /* AliyunOSSSimpleDownloadDemo.m */,
+				4AB444BD1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m */,
+				4AB444C01BFC9FA000568D6A /* AliyunOSSHeaderDownloadDemo.m */,
+			);
+			path = oss_ios_download_demo;
+			sourceTree = "<group>";
+		};
+		4AB444AB1BFC616600568D6A /* oss_ios_init_demo */ = {
+			isa = PBXGroup;
+			children = (
+				4A20C2D21BFD59D2008C4325 /* AliyunOSSPlaintextInitDemo.h */,
+				4A20C2D81BFD672E008C4325 /* AliyunOSSCustomInitDemo.h */,
+				4A20C2D31BFD5F48008C4325 /* AliyunOSSSTSInitDemo.h */,
+				4A20C2D01BFD59C2008C4325 /* AliyunOSSPlaintextInitDemo.m */,
+				4A20C2D61BFD6726008C4325 /* AliyunOSSCustomInitDemo.m */,
+				4A20C2D41BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m */,
+			);
+			path = oss_ios_init_demo;
+			sourceTree = "<group>";
+		};
+		4AB444AD1BFC61D900568D6A /* oss_ios_common_support */ = {
+			isa = PBXGroup;
+			children = (
+				4AB444AE1BFC61F200568D6A /* AliyunOSSCommonSupport.h */,
+				4AB444AF1BFC620600568D6A /* AliyunOSSCommonSupport.m */,
+			);
+			path = oss_ios_common_support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +320,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A20C2D71BFD6726008C4325 /* AliyunOSSCustomInitDemo.m in Sources */,
+				4AB444B01BFC620600568D6A /* AliyunOSSCommonSupport.m in Sources */,
+				4AB444C11BFC9FA000568D6A /* AliyunOSSHeaderDownloadDemo.m in Sources */,
+				4A20C2D11BFD59C2008C4325 /* AliyunOSSPlaintextInitDemo.m in Sources */,
+				4AB444841BFC5F2C00568D6A /* AliyunOSSSimpleUploadDemo.m in Sources */,
 				210289381BA9240300C2A6BA /* AliyunOSSDemo.m in Sources */,
 				21F02EC51BA6AC8800D13D12 /* ViewController.m in Sources */,
+				4AB444B81BFC698900568D6A /* AliyunOSSMultipartUploadDemo.m in Sources */,
+				4AB444BE1BFC9F6C00568D6A /* AliyunOSSScopeDownloadDemo.m in Sources */,
 				21F02EC21BA6AC8800D13D12 /* AppDelegate.m in Sources */,
+				4A20C2DB1BFD7D57008C4325 /* AliyunOSSDemoTest.m in Sources */,
 				21F02EBF1BA6AC8800D13D12 /* main.m in Sources */,
+				4AB444B61BFC690200568D6A /* AliyunOSSAppendUploadDemo.m in Sources */,
+				4A20C2D51BFD5F5D008C4325 /* AliyunOSSSTSInitDemo.m in Sources */,
+				4AB444C51BFCA55500568D6A /* AliyunOSSMD5UploadDemo.m in Sources */,
+				4AB444BC1BFC9F4500568D6A /* AliyunOSSSimpleDownloadDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +469,12 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/oss_ios_demo",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/oss_ios_common_support",
+					"$(PROJECT_DIR)/oss_ios_download_demo",
+					"$(PROJECT_DIR)/oss_ios_upload_demo",
+					"$(PROJECT_DIR)/oss_ios_init_demo",
+				);
 				INFOPLIST_FILE = oss_ios_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -382,6 +492,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/oss_ios_demo",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/oss_ios_common_support",
+					"$(PROJECT_DIR)/oss_ios_download_demo",
+					"$(PROJECT_DIR)/oss_ios_upload_demo",
+					"$(PROJECT_DIR)/oss_ios_init_demo",
 				);
 				INFOPLIST_FILE = oss_ios_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
