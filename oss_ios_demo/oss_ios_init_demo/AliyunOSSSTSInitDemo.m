@@ -50,10 +50,10 @@ extern NSString * endPoint;
                                                                       error:nil];
             OSSFederationToken * token = [OSSFederationToken new];
             // 四个值缺一不可
-            token.tAccessKey = [object objectForKey:@"<enter accessKeyId>"];
-            token.tSecretKey = [object objectForKey:@"<enter accessKeySecret>"];
-            token.tToken = [object objectForKey:@"<enter securityToken>"];
-            token.expirationTimeInGMTFormat = [object objectForKey:@"<enter expiration>"];
+            token.tAccessKey = [object objectForKey:@"accessKeyId"];
+            token.tSecretKey = [object objectForKey:@"accessKeySecret"];
+            token.tToken = [object objectForKey:@"securityToken"];
+            token.expirationTimeInGMTFormat = [object objectForKey:@"expiration"];
             return token;
         }
     }];
